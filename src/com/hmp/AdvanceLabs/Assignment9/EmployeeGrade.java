@@ -1,4 +1,4 @@
-package com.hmp.AdvanceLabs.Assignment8;
+package com.hmp.AdvanceLabs.Assignment9;
 
 public class EmployeeGrade {
     private int empolyeeNo;
@@ -17,11 +17,20 @@ public class EmployeeGrade {
         this.customer3Feedback = customer3Feedback;
 
     }
+    //Method overridind
+    public void initilizeEmployee(int empolyeeNo, String employeeName, float customer1Feedback, float customer2Feedback) {
+        this.empolyeeNo = empolyeeNo;
+        this.employeeName = employeeName;
+        this.customer1Feedback = customer1Feedback;
+        this.customer2Feedback = customer2Feedback;
 
-    public void calculateAverageFeedback() {
-        averageFeedback = (customer1Feedback + customer2Feedback + customer3Feedback) / 3;
     }
-
+    public void calculateAverageFeedback(float customer1Feedback, float customer2Feedback, float customer3Feedback) {
+        averageFeedback = (this.customer1Feedback + this.customer2Feedback +this.customer3Feedback) / 3;
+    }
+    public void calculateAverageFeedback(int customer1Feedback, int customer2Feedback) {
+        averageFeedback = (this.customer1Feedback + this.customer2Feedback + this.customer3Feedback) / 2;
+    }
     public void calculateGrade() {
         if (averageFeedback >= 4)
             grade = 'A';
@@ -42,11 +51,12 @@ public class EmployeeGrade {
         System.out.println("Student grade: " + grade);
     }
 }
+
 class wells{
     public static void main(String[] args) {
         EmployeeGrade employeeGrade = new EmployeeGrade();
         employeeGrade.initilizeEmployee(101,"Saile Badal", 3.9f,4.5f,4.2f);
-        employeeGrade.calculateAverageFeedback();
+        employeeGrade.calculateAverageFeedback(3.9f,4.5f, 4.2f);
         employeeGrade.calculateGrade();
         employeeGrade.displayInfo();
     }
