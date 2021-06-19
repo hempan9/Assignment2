@@ -28,7 +28,7 @@ public class EmployeeGrade {
     public void calculateAverageFeedback(float customer1Feedback, float customer2Feedback, float customer3Feedback) {
         averageFeedback = (this.customer1Feedback + this.customer2Feedback +this.customer3Feedback) / 3;
     }
-    public void calculateAverageFeedback(int customer1Feedback, int customer2Feedback) {
+    public void calculateAverageFeedback(float customer1Feedback, float customer2Feedback) {
         averageFeedback = (this.customer1Feedback + this.customer2Feedback + this.customer3Feedback) / 2;
     }
     public void calculateGrade() {
@@ -54,10 +54,15 @@ public class EmployeeGrade {
 
 class wells{
     public static void main(String[] args) {
-        EmployeeGrade employeeGrade = new EmployeeGrade();
-        employeeGrade.initilizeEmployee(101,"Saile Badal", 3.9f,4.5f,4.2f);
-        employeeGrade.calculateAverageFeedback(3.9f,4.5f, 4.2f);
-        employeeGrade.calculateGrade();
-        employeeGrade.displayInfo();
+        EmployeeGrade elvis = new EmployeeGrade();
+        elvis.initilizeEmployee(101,"Elvis Badal", 3.9f,4.5f,4.2f);
+        elvis.calculateAverageFeedback(4.1f,3.9f, 4.2f);
+        elvis.calculateGrade();
+        elvis.displayInfo();
+        EmployeeGrade martha = new EmployeeGrade();
+        martha.initilizeEmployee(103,"Martha",4.2f,4.4f);
+        martha.calculateAverageFeedback(4.2f,4.4f);
+        martha.calculateGrade();
+        martha.displayInfo();
     }
 }
