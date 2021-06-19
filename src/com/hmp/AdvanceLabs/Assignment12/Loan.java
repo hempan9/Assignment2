@@ -1,4 +1,4 @@
-package com.hmp.AdvanceLabs.Day2.Assignment8.A;
+package com.hmp.AdvanceLabs.Assignment12;
 
 public class Loan {
     private int loanNo;
@@ -7,18 +7,15 @@ public class Loan {
     private float loanAmount;
     private int loanDuration;
     private float interest;
-    static int loanCounter; //loanCOunter counts the total number of objects
     public Loan(){
-        loanCounter++;
+
     }
-    public Loan(int accountNo, int customerNo, int loanDuration, float loanAmount,
-                float interest){
+    public Loan(int accountNo, int customerNo, int loanDuration, float loanAmount, float interest){
         this.accountNo=accountNo;
         this.customerNo = customerNo;
         this.loanDuration=loanDuration;
         this.loanAmount=loanAmount;
         this.interest= interest;
-        loanCounter++;
 
     }
     public float calculateInstallments(){
@@ -71,17 +68,5 @@ public class Loan {
 
     public void setInterest(float interest) {
         this.interest = interest;
-    }
-
-    public static void main(String[] args) {
-        Loan l[] =new Loan[3];
-        for (int i = 0; i < l.length; i++) {
-            l[i]=new Loan(101,1,2,255000,4.5f);
-        }
-        Loan ll[] =new Loan[3];
-        for (int i = 0; i < ll.length; i++) {
-            ll[i]=new Loan();
-        }
-        System.out.println("Number of instances: "+loanCounter);
     }
 }

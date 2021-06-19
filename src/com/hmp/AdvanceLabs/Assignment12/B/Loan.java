@@ -1,4 +1,4 @@
-package com.hmp.AdvanceLabs.Day2.Assignment8.B;
+package com.hmp.AdvanceLabs.Assignment12.B;
 
 public class Loan {
     private int loanNo;

@@ -1,4 +1,4 @@
-package com.hmp.AdvanceLabs.Day2.Assignment8.C;
+package com.hmp.AdvanceLabs.Assignment12.A;
 
 public class Loan {
     private int loanNo;
@@ -8,10 +8,10 @@ public class Loan {
     private int loanDuration;
     private float interest;
     static int loanCounter; //loanCOunter counts the total number of objects
-    private Loan(){
+    public Loan(){
         loanCounter++;
     }
-    private Loan(int accountNo, int customerNo, int loanDuration, float loanAmount,
+    public Loan(int accountNo, int customerNo, int loanDuration, float loanAmount,
                 float interest){
         this.accountNo=accountNo;
         this.customerNo = customerNo;
@@ -68,25 +68,20 @@ public class Loan {
     public float getInterest() {
         return interest;
     }
-    public int getNumberOfObjects(){
-        return loanCounter;
-    }
 
     public void setInterest(float interest) {
         this.interest = interest;
     }
-        static {
-        loanCounter=101;
-        }
-    public static Loan getLoanInstance(int accountNo, int customerNo, int loanDuration, float loanAmount, float interest){
-        return new Loan(accountNo,customerNo,loanDuration,loanAmount,interest);
-    }
-}
-class TestLoan{
-    public static void main(String[] args) {
 
-        Loan loan = Loan.getLoanInstance(10,1,2,12500.1f,4.5f);
-        System.out.println("Number of instances: "+Loan.loanCounter);
-        System.out.println("Total number of objects: "+loan.getNumberOfObjects());
+    public static void main(String[] args) {
+        Loan l[] =new Loan[3];
+        for (int i = 0; i < l.length; i++) {
+            l[i]=new Loan(101,1,2,255000,4.5f);
+        }
+        Loan ll[] =new Loan[3];
+        for (int i = 0; i < ll.length; i++) {
+            ll[i]=new Loan();
+        }
+        System.out.println("Number of instances: "+loanCounter);
     }
 }
