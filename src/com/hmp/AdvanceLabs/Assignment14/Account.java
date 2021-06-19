@@ -1,6 +1,6 @@
 package com.hmp.AdvanceLabs.Assignment14;
 
-public class Account {
+public class Account  {
     private int accountNo;
     private Customer customer;
     double balance;
@@ -22,5 +22,6 @@ public class Account {
     }
     public void deposit(double amount){
         balance = balance+amount;
+        System.out.println("Available Balance: "+balance);
     }
 }

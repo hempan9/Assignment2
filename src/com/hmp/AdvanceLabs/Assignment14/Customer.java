@@ -1,6 +1,6 @@
 package com.hmp.AdvanceLabs.Assignment14;
 
-public class Customer {
+public class Customer extends Account{
     private int customerId;
     private String customerName;
     private String customerAddress;
