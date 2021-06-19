@@ -1,4 +1,4 @@
-package com.hmp.AdvanceLabs.Assignment14;
+package com.hmp.AdvanceLabs.Assignment17;
 
 public class CurrentAccount extends Account {
     private double currentAmount;
