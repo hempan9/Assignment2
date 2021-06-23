@@ -2,6 +2,8 @@ package com.hmp.AdvanceLabs.Assignment2;
 
 public class EmployeeGrade {
     public static void main(String[] args) {
+        //To-do: Calculate the average feedback of all the employees
+        //To-do: Determine the grade of all the employees
         int employeeId[] = {1001, 1002,1003,1004,1005};
         float customer1Feedback[]= {4.1f, 3.8f, 4.5f, 2.9f,1.9f};
         float customer2Feedback[]= {3.5f, 2.9f, 3.7f, 4.1f,2.5f};

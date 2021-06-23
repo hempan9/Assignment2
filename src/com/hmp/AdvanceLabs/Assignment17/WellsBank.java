@@ -2,6 +2,13 @@ package com.hmp.AdvanceLabs.Assignment17;
 
 public class WellsBank {
     public static void main(String[] args) {
+        // To-do: Create an instance (john) for Customer class. Call the overloaded constructor
+        // To-do: call transaction(johnSA,1000) of WellsBank
+        // To-do: call the method to withdraw Rs.1600.
+        // To-do: display the balance available.
+        // To-do: Create an instance (jenny) for Customer class. Call the overloaded constructor// To-do: call transaction(jennyOA,1500) of WellsBank
+        // To-do: display the balance available in account no 201 Note: available balance for Current Account is balance+ Allowed negative amount
+
         Customer john = new Customer(100, "John", "Fort Worth", 1221);
         SavingsAccount johnSA = new SavingsAccount(101, john, 1000);
         transction(johnSA, 1000);

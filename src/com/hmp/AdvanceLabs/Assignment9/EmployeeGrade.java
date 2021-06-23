@@ -54,6 +54,14 @@ public class EmployeeGrade {
 
 class wells{
     public static void main(String[] args) {
+        // To-do: Create an instance (Elvis) for EmployeeGrade class
+        // To-do: Call the initializeEmployee with 3 feedback
+        // To-do: Invoke methods for calculating Avg feedback & grade
+        // To-do: Invoke method to display the employee information
+        // To-do: Create an instance (Elvis) for EmployeeGrade class
+        // To-do: Call the initializeEmployee with 2 feedback
+        // To-do: Invoke methods for calculating Avg feedback & grade
+        // To-do: Invoke method to display the employee information
         EmployeeGrade elvis = new EmployeeGrade();
         elvis.initilizeEmployee(101,"Elvis Badal", 3.9f,4.5f,4.2f);
         elvis.calculateAverageFeedback(4.1f,3.9f, 4.2f);

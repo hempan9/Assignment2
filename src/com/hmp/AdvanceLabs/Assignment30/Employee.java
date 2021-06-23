@@ -1,6 +1,8 @@
 package com.hmp.AdvanceLabs.Assignment30;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class Employee {
     int employeeId;
@@ -37,6 +39,9 @@ public String toString(){
 }
 class EmployeeInfo{
     public static void main(String[] args) {
+        //To-Do : create four employee objects
+        //To-Do : store the objects in the ArrayList
+        //To-Do : retrieve the employee objects from the list using iterator and display their information
         Employee employee1 = new Employee();
         Employee employee2 = new Employee();
         Employee employee3 = new Employee();
@@ -56,7 +61,8 @@ class EmployeeInfo{
         List list=new ArrayList();
         list.add(employee1);
         list.add(employee2);
-        list.add(employee3); list.add(employee4);
+        list.add(employee3);
+        list.add(employee4);
         Iterator iterator = list.iterator();
         while (iterator.hasNext()){
             Object elm = iterator.next();

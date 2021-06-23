@@ -55,6 +55,9 @@ class wells {
         ram.calculateGrade();
         ram.displayInfo();
        */
+        // To-do: Invoke methods for calculating Avg feedback & grade for „james‟ alone
+
+        // To-do: Invoke method to display the employee information for „james‟ alone
         EmployeeGrade james = new EmployeeGrade(102,"James",4.2f,4.4f,4.1f);
         james.calculateAverageFeedback();
         james.calculateGrade();

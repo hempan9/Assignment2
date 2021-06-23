@@ -9,6 +9,8 @@ public class EmployeeInfo {
         employeeId.add(1002);
         employeeId.add(1003);
         for (int count = 0; count < employeeId.size(); count++) {
+            // To-do: retrieve & display the value
+            // To-do: stored in int variable
             int val = employeeId.get(count);
             System.out.println(val);
 

@@ -40,11 +40,14 @@ public class Customer {
 }
 class WellBank{
     public static void main(String[] args) {
+        // To-do: Create an instance (john) for Customer class.
+        //Set the values of all the member variables for „john‟
         Customer john = new Customer();
         john.setCustomerId(101);
         john.setCustomerName("John Smith");
         john.setPinCode(1214);
         john.setCustomerAddress("Fort Worth");
+        //To-do: Retrieve and display all the other member variables
         System.out.println(john.getCustomerId()+" "+john.getCustomerName()+" "+
                 john.getPinCode()+" "+john.getCustomerAddress());
 

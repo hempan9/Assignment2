@@ -44,6 +44,9 @@ public class EmployeeGrade {
 
 class wells {
     public static void main(String[] args) {
+        // To-do: Create instance(ram) for EmployeeGrade.
+        // To-do: Invoke methods for calculating Avg feedback & grade
+        // To-do: Invoke method to display the employee information
         EmployeeGrade ram = new EmployeeGrade();
         ram.calculateAverageFeedback();
         ram.calculateGrade();

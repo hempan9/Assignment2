@@ -56,9 +56,12 @@ public EmployeeGrade(int empolyeeNo, String employeeName, float customer1Feedbac
 class wells {
     public static void main(String[] args) {
         EmployeeGrade ram = new EmployeeGrade();
-        ram.calculateAverageFeedback();
+       /* ram.calculateAverageFeedback();
         ram.calculateGrade();
-        ram.displayInfo();
+        ram.displayInfo();*/
+        // To-do: Invoke methods for calculating Avg feedback & grade for „james‟ alone
+
+        // To-do: Invoke method to display the employee information for „james‟ alone
         EmployeeGrade james = new EmployeeGrade(102,"James",4.2f,4.4f,4.1f);
         james.calculateAverageFeedback();
         james.calculateGrade();

@@ -42,10 +42,14 @@ public class EmployeeGrade {
         System.out.println("Student grade: " + grade);
     }
 }
-class wells{
+
+class wells {
     public static void main(String[] args) {
+        // To-do: Create an instance (Elvis) for EmployeeGrade class.
+        // To-do: Invoke methods for calculating Avg feedback & grade
+        // To-do: Invoke method to display the employee information
         EmployeeGrade employeeGrade = new EmployeeGrade();
-        employeeGrade.initilizeEmployee(101,"Saile Badal", 3.9f,4.5f,4.2f);
+        employeeGrade.initilizeEmployee(101, "Saile Badal", 3.9f, 4.5f, 4.2f);
         employeeGrade.calculateAverageFeedback();
         employeeGrade.calculateGrade();
         employeeGrade.displayInfo();

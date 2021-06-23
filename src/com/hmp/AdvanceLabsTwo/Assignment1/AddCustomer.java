@@ -1,5 +1,6 @@
 package com.hmp.AdvanceLabsTwo.Assignment1;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -14,6 +15,15 @@ public class AddCustomer {
     }
 
     public static void main(String[] args) {
+        //Create reference of List and Object of ArrayList
+        List<String> list = new ArrayList<String>();
+        list.add("Jack");
+        list.add("Harry");
+        list.add("Tabrez");
+        list.add("Leezu");
+        AddCustomer addCustomer = new AddCustomer();
+        System.out.println(list);
+        //Call printCustomer () print the contents of list
+        addCustomer.printCustomers(list);
 
-    }
-}
+}}

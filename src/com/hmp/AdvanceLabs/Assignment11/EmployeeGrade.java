@@ -16,13 +16,15 @@ public class EmployeeGrade {
         customer2Feedback = 4.0f;
         customer3Feedback = 4.3f;
     }
-public EmployeeGrade(int empolyeeNo, String employeeName, float customer1Feedback, float customer2Feedback, float customer3Feedback){
-        this.empolyeeNo= empolyeeNo;
-        this.employeeName=employeeName;
-        this.customer1Feedback=customer1Feedback;
-        this.customer2Feedback=customer2Feedback;
-        this.customer3Feedback=customer3Feedback;
-}
+
+    public EmployeeGrade(int empolyeeNo, String employeeName, float customer1Feedback, float customer2Feedback, float customer3Feedback) {
+        this.empolyeeNo = empolyeeNo;
+        this.employeeName = employeeName;
+        this.customer1Feedback = customer1Feedback;
+        this.customer2Feedback = customer2Feedback;
+        this.customer3Feedback = customer3Feedback;
+    }
+
     public void calculateAverageFeedback() {
         averageFeedback = (this.customer1Feedback + this.customer2Feedback + this.customer3Feedback) / 3;
     }
@@ -51,8 +53,11 @@ public EmployeeGrade(int empolyeeNo, String employeeName, float customer1Feedbac
 class wells {
     public static void main(String[] args) {
         EmployeeGrade employee[] = new EmployeeGrade[5];
+        // To-do: Initialize the references by calling the parameterized constructor.
+        // To-do: Call the corresponding methods to calculate average feedback and grade for all the 5 employees.
+        // To-do: Display the details for all the 5 employees
         for (int i = 0; i < employee.length; i++) {
-            employee[i]=new EmployeeGrade(100,"Mufasa",3.8f,3.7f,2.7f);
+            employee[i] = new EmployeeGrade(100, "Mufasa", 3.8f, 3.7f, 2.7f);
             employee[i].calculateAverageFeedback();
             employee[i].calculateGrade();
             employee[i].displayInfo();
