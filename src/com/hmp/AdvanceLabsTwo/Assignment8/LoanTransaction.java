@@ -10,8 +10,9 @@ public class LoanTransaction implements Runnable{
         this.customerId= customerId;
         this.loanAmount = loanAmount;
     }
-    public synchronized void startTH(){
+    public  void run(){
         try{
+            synchronized (bankFund){
             //checking if the bank has sufficient fund
             bankFund.checkFund(loanAmount);
             //document verification delay
@@ -22,17 +23,11 @@ public class LoanTransaction implements Runnable{
             System.out.println(customerId+" The loan is disbursed. Please collect the cash from the Teller");
             System.out.println("Fund left in the bank "+fundAvailable);
 
-        }
+        }}
         catch (InsufficientFundException | InterruptedException insufficientBalanceException){
             //displaying error message
             System.out.println("Sorry!! "+customerId+" Please try some days later as we are short of funds");
         }
     }
 
-
-    @Override
-    public void run() {
-        System.out.println("Running Thread: "+Thread.currentThread().getName());
-        startTH();
-    }
 }

@@ -28,6 +28,9 @@ public class WellsBank {
         jennyOA.withdraw(1000);
         jennyOA.withdraw(4000);
         jennyOA.withdraw(3000);
+        jennyOA.withdraw(3000);
+       // jennyOA.withdraw(3000);
+
 
 
     }

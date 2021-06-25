@@ -1,4 +1,4 @@
-➢ Identify the classes to be designed -->customer, savings account, overdraft account
-➢ Find the relationship between the classes -->
-➢ Identify the member variables and methods of the classes
-➢ Implement the classes and their methods
+➢ Identify the classes to be designed -->customer, account, savings account, overdraft account
+➢ Find the relationship between the classes --> customer hasA account. saving and overdraft isA relationship
+➢ Identify the member variables and methods of the classes -->
+➢ Implement the classes and their methods -->
